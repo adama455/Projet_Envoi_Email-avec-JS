@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>FORMULAIRE</title>
+
+  </head>
+
+  <body>
+    <section>
+      <form id="form" class="container" method="POST">
+        <div class="field">
+          <label for="from_name">Nom</label>
+          <input type="text" name="from_name" id="from_name" class="form-control" required><br>
+        </div>
+        <div class="field">
+          <label for="Adresse">Adresse</label>
+          <input type="text" name="Adresse" id="Adresse" class="form-control" required><br>
+        </div>
+        <div class="field">
+          <label for="Email">Email</label>
+          <input type="text" name="Email" id="Email" class="form-control" required><br>
+        </div>
+        <div class="field">
+          <label for="mot_de_passe">Mot de passe</label>
+          <input type="text" name="mot_de_passe" id="mot_de_passe" class="form-control" required><br>
+        </div>
+        <div class="field">
+          <label for="Pasword">Telephone</label>
+          <input type="text" name="Pasword" id="Pasword" class="form-control" required><br>
+        </div>
+        <div>
+          <label for="Choix" class="form-label">CHOISIR VOTRE COURS</label>
+          <select id="Choix" name="Choix" class="form-select">
+            <option value="php" selected>PHP</option>
+            <option value="css">CSS</option>
+            <option value="html">HTML</option>
+          </select>
+        </div><br>
+        <div class="form-group">
+          <label for="message" class="form-label">Commentaire</label>
+          <textarea class="form-control" name="message">
+            </textarea>
+        </div>
+        <input type="submit" id="button" value="Send Email"><br>
+      </form>
+    </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      emailjs.init('user_DblwMQsFpkUq1c6PXwbZN')
+    </script>
+    <script src="index.js"></script>
+
+  </body>
+</html>
+
